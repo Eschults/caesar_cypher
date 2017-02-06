@@ -1,0 +1,9 @@
+<h1>Possible meanings</h1>
+
+<p>You submitted the form in <%= @elapsed_time.truncate %> seconds</p>
+
+<ol>
+  <% @possibilities.each do |possibility|%>
+    <li><p><%= possibility %></p></li>
+  <% end %>
+</ol>

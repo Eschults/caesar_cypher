@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1>Let's decrypt</h1>
+      <form action="/decrypt">
+        <div class="form-group">
+          <label for="encrypted_message">Message to decrypt</label>
+          <textarea name="encrypted_message" id="" cols="30" rows="10" value="toto" class="form-control"></textarea>
+          <input type="hidden" name="start_time" value="<%= @start_time %>">
+        </div>
+        <input type="submit" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>
